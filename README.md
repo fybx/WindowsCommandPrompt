@@ -17,7 +17,7 @@
  - [x] All bugs that ConsoleControlAPI and AltConsole had is not included :)
  
  (version 1.1)
- - [] Support for use in WPF projects.
+ - [ ] Support for use in WPF projects.
  
  ## Contact me
 
