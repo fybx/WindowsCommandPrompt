@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WindowsCommandPrompt</name>
+    </assembly>
+    <members>
+        <member name="T:WindowsCommandPrompt.CmdWrapperTextBox">
+            <summary>
+            Use a RichTextBox control to implement the Command Prompt in your application.
+            </summary>
+        </member>
+        <member name="P:WindowsCommandPrompt.CmdWrapperTextBox.TextBox">
+            <summary>
+            Returns the TextBox used to display output and receive input.
+            </summary>
+        </member>
+        <member name="P:WindowsCommandPrompt.CmdWrapperTextBox.Closed">
+            <summary>
+            Returns true if Process is stopped and the connection the Command Prompt is shut.
+            </summary>
+        </member>
+        <member name="P:WindowsCommandPrompt.CmdWrapperTextBox.PositionOfCaret">
+            <summary>
+            Returns the position of caret in the TextBox.
+            </summary>
+        </member>
+        <member name="P:WindowsCommandPrompt.CmdWrapperTextBox.PositionOfSplitter">
+            <summary>
+            Returns the position of '>' character when the prompt is awaiting input.
+            </summary>
+        </member>
+        <member name="P:WindowsCommandPrompt.CmdWrapperTextBox.ConsoleTitle">
+            <summary>
+            Returns the Title property of the Command Prompt. Change it by "title [arg]" command.
+            </summary>
+        </member>
+        <member name="M:WindowsCommandPrompt.CmdWrapperTextBox.#ctor(System.Windows.Forms.RichTextBox)">
+            <summary>
+            Start the process and open the i/o connection between Command Prompt and TextBox.  
+            </summary>
+            <param name="textBox">RichTextBox to use for displaying output and receiving input</param>
+        </member>
+        <member name="M:WindowsCommandPrompt.CmdWrapperTextBox.Close">
+            <summary>
+            Close the connection and stop the process. Same functionality with Dispose().
+            </summary>
+        </member>
+        <member name="M:WindowsCommandPrompt.CmdWrapperTextBox.Dispose(System.Boolean)">
+            <summary>
+            Dispose the class.
+            </summary>
+            <param name="disposing">Set to true</param>
+        </member>
+        <member name="M:WindowsCommandPrompt.CmdWrapperTextBox.Dispose">
+            <summary>
+            Dispose the class. Closes the connection and terminates the process.
+            </summary>
+        </member>
+    </members>
+</doc>

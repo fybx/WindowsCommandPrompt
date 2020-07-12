@@ -1,0 +1,932 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LuddeToolset</name>
+    </assembly>
+    <members>
+        <member name="T:LuddeToolset.ConsoleMethods">
+            <summary>
+            C++ like methods for faster typing and cooler looking codes. Include with 'using static LuddeToolset.ConsoleMethods'.
+            </summary>
+        </member>
+        <member name="M:LuddeToolset.ConsoleMethods.pause">
+            <summary>
+            "Press any key to continue..."
+            </summary>
+        </member>
+        <member name="M:LuddeToolset.ConsoleMethods.read">
+            <summary>
+            return Console.Read();
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.ConsoleMethods.readln">
+            <summary>
+            return Console.ReadLine();
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.ConsoleMethods.tit(System.String)">
+            <summary>
+            Changes console title if new_title is a valid string.
+            </summary>
+            <param name="new_title"></param>
+        </member>
+        <member name="M:LuddeToolset.ConsoleMethods.write(System.Object)">
+            <summary>
+            Console.Write(buffer.ToString());
+            </summary>
+            <param name="buffer"></param>
+        </member>
+        <member name="M:LuddeToolset.ConsoleMethods.write(System.String)">
+            <summary>
+            Console.Write(buffer);
+            </summary>
+            <param name="buffer"></param>
+        </member>
+        <member name="M:LuddeToolset.ConsoleMethods.write(System.String,System.Object[])">
+            <summary>
+            Console.Write(format, args);
+            </summary>
+            <param name="format"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:LuddeToolset.ConsoleMethods.writeln(System.Object)">
+            <summary>
+            Console.WriteLine(buffer.ToString());
+            </summary>
+            <param name="buffer"></param>
+        </member>
+        <member name="M:LuddeToolset.ConsoleMethods.writeln(System.String)">
+            <summary>
+            Console.WriteLine(buffer);
+            </summary>
+            <param name="buffer"></param>
+        </member>
+        <member name="M:LuddeToolset.ConsoleMethods.writeln(System.String,System.Object[])">
+            <summary>
+            Console.WriteLine(format, args);
+            </summary>
+            <param name="format"></param>
+            <param name="args"></param>
+        </member>
+        <member name="T:LuddeToolset.Crypto">
+            <summary>
+            Library for widely used Cryptography methods.
+            </summary>
+            <summary>
+            Library for widely used Cryptography methods.
+            </summary>
+        </member>
+        <member name="F:LuddeToolset.Crypto.RndGenerator">
+            <summary>
+            Initialized Random class.
+            </summary>
+        </member>
+        <member name="M:LuddeToolset.Crypto.GetSHA512ByteArray(System.String)">
+            <summary>
+            SHA512(value) in byte array
+            </summary>
+            <param name="value">The input to compute SHA512 hash</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.GetSHA512String(System.String)">
+            <summary>
+            SHA512(value) in string
+            </summary>
+            <param name="value">The input to compute SHA512 hash</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.GetSHA384ByteArray(System.String)">
+            <summary>
+            SHA384(value) in byte array
+            </summary>
+            <param name="value">The input to compute SHA384 hash</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.GetSHA384String(System.String)">
+            <summary>
+            SHA384(value) in string
+            </summary>
+            <param name="value">The input to compute SHA384 hash</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.GetSHA256ByteArray(System.String)">
+            <summary>
+            SHA256(value) in byte array
+            </summary>
+            <param name="value">The input to compute SHA256 hash</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.GetSHA256String(System.String)">
+            <summary>
+            SHA256(value) in string
+            </summary>
+            <param name="value">The input to compute SHA256 hash</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.GetSHA1ByteArray(System.String)">
+            <summary>
+            SHA1(value) in byte array
+            </summary>
+            <param name="value">The input to compute SHA1 hash</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.GetSHA1String(System.String)">
+            <summary>
+            SHA1(value) in string
+            </summary>
+            <param name="value">The input to compute SHA1 hash</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.GetMD5ByteArray(System.String)">
+            <summary>
+            MD5(value) in byte array.
+            </summary>
+            <param name="value">The input to compute MD5 hash</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.GetMD5String(System.String)">
+            <summary>
+            MD5(value) in string.
+            </summary>
+            <param name="value">The input to compute MD5 hash</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.Random">
+            <summary>
+            Returns random number.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.Random(System.Int32)">
+            <summary>
+            Returns random number that is less than specified maximum.
+            </summary>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.Random(System.Int32,System.Int32)">
+            <summary>
+            Returns random number that is within the specified range.
+            </summary>
+            <param name="min"></param>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LuddeToolset.Crypto.AESNative">
+            <summary>
+            Provides methods for encryption/decryption with AES. Uses System.Security.Cryptography.AesCryptoServiceProvider.
+            </summary>
+        </member>
+        <member name="M:LuddeToolset.Crypto.AESNative.EncryptStringToBytes(System.String,System.Byte[],System.Byte[])">
+            <summary>
+            Encrypts supplied string and returns encrypted output in byte array.
+            </summary>
+            <param name="plainText">Text to encrypt</param>
+            <param name="Key">AES Key byte array</param>
+            <param name="IV">AES Initialization Vector byte array</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.AESNative.DecryptStringFromBytes(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            Decrypts cipherText byte array to plain text.
+            </summary>
+            <param name="cipherText">Byte[] to decrypt</param>
+            <param name="Key">AES Key byte array</param>
+            <param name="IV">AES Initialization Vector byte array</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.AESNative.EncryptFile(System.String,System.String,System.Byte[],System.Byte[])">
+            <summary>
+            Encrypts supplied text and writes encrypted bytes to a file at supplied filePath.
+            </summary>
+            <param name="fileContents">Text to encrypt</param>
+            <param name="filePath">Path to file.</param>
+            <param name="key">AES Key byte array</param>
+            <param name="IV">AES Initialization Vector byte array</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.AESNative.DecryptFile(System.String@,System.String,System.Byte[],System.Byte[])">
+            <summary>
+            Reads from supplied file, decrypts file contents, outputs via decryptedFileContents.
+            </summary>
+            <param name="decryptedFileContents">Output</param>
+            <param name="filePath">Path to file.</param>
+            <param name="key">AES Key byte array</param>
+            <param name="IV">AES Initialization Vector byte array</param>
+        </member>
+        <member name="T:LuddeToolset.Crypto.AESManaged">
+            <summary>
+            Provides methods for encryption/decryption with AES. Uses System.Security.Cryptography.AesManaged.
+            </summary>
+        </member>
+        <member name="M:LuddeToolset.Crypto.AESManaged.EncryptStringToBytes(System.String,System.Byte[],System.Byte[])">
+            <summary>
+            Encrypts supplied string and returns encrypted output in byte array.
+            </summary>
+            <param name="plainText">Text to encrypt</param>
+            <param name="Key">AES Key byte array</param>
+            <param name="IV">AES Initialization Vector byte array</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.AESManaged.DecryptStringFromBytes(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            Decrypts cipherText byte array to plain text.
+            </summary>
+            <param name="cipherText">Byte[] to decrypt</param>
+            <param name="Key">AES Key byte array</param>
+            <param name="IV">AES Initialization Vector byte array</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.AESManaged.EncryptFile(System.String,System.String,System.Byte[],System.Byte[])">
+            <summary>
+            Encrypts supplied text and writes encrypted bytes to a file at supplied filePath.
+            </summary>
+            <param name="fileContents">Text to encrypt</param>
+            <param name="filePath">Path to file.</param>
+            <param name="key">AES Key byte array</param>
+            <param name="IV">AES Initialization Vector byte array</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.AESManaged.DecryptFile(System.String@,System.String,System.Byte[],System.Byte[])">
+            <summary>
+            Reads from supplied file, decrypts file contents, outputs via decryptedFileContents.
+            </summary>
+            <param name="decryptedFileContents">Output</param>
+            <param name="filePath">Path to file.</param>
+            <param name="key">AES Key byte array</param>
+            <param name="IV">AES Initialization Vector byte array</param>
+        </member>
+        <member name="T:LuddeToolset.Crypto.AESResourceSupplier">
+            <summary>
+            Provides safe methods to generate and store Initialization Vectors and Keys.
+            </summary>
+        </member>
+        <member name="M:LuddeToolset.Crypto.AESResourceSupplier.GetKey(System.Int32)">
+            <summary>
+            Generates a new and random Key in specified size.
+            </summary>
+            <param name="size">Size of key. (128, 192, 256)</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Crypto.AESResourceSupplier.GetIV">
+            <summary>
+            Generates a new Initialization Vector.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LuddeToolset.Database">
+            <summary>
+            Database for better storing and retreiving data. Does not automatically save data! 
+            Please use ExportDatabaseImage() method to save object to disk.
+            </summary>
+        </member>
+        <member name="P:LuddeToolset.Database.Name">
+            <summary>
+            Name of Database. Affects the file name of Database image file.
+            </summary>
+        </member>
+        <member name="F:LuddeToolset.Database.ID">
+            <summary>
+            GUID of Database. It's there because it's cool to have.
+            </summary>
+        </member>
+        <member name="P:LuddeToolset.Database.Handler">
+            <summary>
+            ErrorHandler of any instance of this class. You need to attach one handler.
+            </summary>
+        </member>
+        <member name="P:LuddeToolset.Database.RowCount">
+            <summary>
+            Amount of rows in present time.
+            </summary>
+        </member>
+        <member name="P:LuddeToolset.Database.ColumnCount">
+            <summary>
+            Amount of columns in present time.
+            </summary>
+        </member>
+        <member name="F:LuddeToolset.Database.NeedsSaving">
+            <summary>
+            True if any data was changed - needs to be saved to the disk! 
+            </summary>
+        </member>
+        <member name="P:LuddeToolset.Database.ExportDirectory">
+            <summary>
+            Specifies the directory that this Database object gets saved to.
+            </summary>
+        </member>
+        <member name="M:LuddeToolset.Database.#ctor(System.String,System.String)">
+            <summary>
+            Reads a database file and loads to this Database object.
+            </summary>
+            <param name="pathToDatabaseFile"></param>
+            <param name="exportDirectory"></param>
+        </member>
+        <member name="M:LuddeToolset.Database.#ctor(System.String,LuddeToolset.ErrorHandler,System.String,System.String[])">
+            <summary>
+            Creates a new Database object, DOES NOT SAVE IT.
+            </summary>
+            <param name="name"></param>
+            <param name="handler"></param>
+            <param name="exportDirectory"></param>
+            <param name="columnNames"></param>
+        </member>
+        <member name="M:LuddeToolset.Database.AddRow(System.String[])">
+            <summary>
+            Adds a new row to Database, returns index of new row.
+            </summary>
+            <param name="subitems"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Database.ChangeName(System.String)">
+            <summary>
+            Changes name of Database object. This also changes the name that was used to store the file.
+            </summary>
+            <param name="name">Only changed if name is valid</param>
+        </member>
+        <member name="M:LuddeToolset.Database.ExportDatabaseImage(System.String)">
+            <summary>
+            Exports (saves) Database object's contents to disk. Uses provided internal ErrorHandler to handle errors.
+            </summary>
+            <param name="exportDirectory">Directory to save image at</param>
+        </member>
+        <member name="M:LuddeToolset.Database.ExportDatabaseImage">
+            <summary>
+            Exports (saves) Database object's contents to disk. Uses provided internal ErrorHandler to handle errors.
+            </summary>
+        </member>
+        <member name="M:LuddeToolset.Database.LookUpForString(System.String)">
+            <summary>
+            Returns coordinates (row, column) of every matching string. Opposite of GetSubitemAtCoordinates().
+            </summary>
+            <param name="lookUp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Database.GetSubitemAtCoordinates(System.Int32,System.Int32)">
+            <summary>
+            Returns string in given coordinates. Opposite of LookUpForString().
+            </summary>
+            <param name="rowIndex">Horizontal position (index) of item</param>
+            <param name="columnIndex">Vertical position (index) of item</param>
+            <returns>Returns empty string if arguments are not valid</returns>
+        </member>
+        <member name="M:LuddeToolset.Database.GetSubitemAtCoordinates(System.Int32,System.String)">
+            <summary>
+            Returns string in given coordinates. Opposite of LookUpForString().
+            </summary>
+            <param name="rowIndex">Horizontal position (index) of item</param>
+            <param name="columnName">Name of column</param>
+            <returns>Returns empty string if arguments are not valid</returns>
+        </member>
+        <member name="M:LuddeToolset.Database.RemoveRowAt(System.Int32)">
+            <summary>
+            If present, removes row at given index.
+            </summary>
+            <param name="index">Index of row</param>
+        </member>
+        <member name="M:LuddeToolset.Database.ReturnAllSubitemsInColumn(System.Int32)">
+            <summary>
+            Returns subitems in given column index. (Up to down / vertically) Returns null if index is not valid.
+            </summary>
+            <param name="columnIndex">Index of column</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Database.ReturnAllSubitemsInColumn(System.String)">
+            <summary>
+            Returns subitems in given column index. (Up to down / vertically) Returns null if index is not valid.
+            </summary>
+            <param name="columnName">Name of column</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.Database.ReturnSubitemsInRow(System.Int32)">
+            <summary>
+            Returns all subitems in indexed row.
+            </summary>
+            <param name="rowIndex">Index of row</param>
+            <returns>If index is not valid returns null</returns>
+        </member>
+        <member name="M:LuddeToolset.Database.UpdateRow(System.Int32,System.String[])">
+            <summary>
+            Updates contents in row with new subitem array.
+            </summary>
+            <param name="index">Index of row to overwrite</param>
+            <param name="subitems">Subitems to overwrite</param>
+        </member>
+        <member name="M:LuddeToolset.Database.WriteDatabaseToConsole">
+            <summary>
+            Prints column names and all rows to console.
+            </summary>
+        </member>
+        <member name="M:LuddeToolset.Database.GetFormattedDumpOfDatabase">
+            <summary>
+            Returns string object containing all information about Database object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LuddeToolset.Database.ReachedMaximumRowCountException">
+            <summary>
+            Occurs when maximum amount of rows are reached. 
+            </summary>
+        </member>
+        <member name="M:LuddeToolset.Database.ReachedMaximumRowCountException.#ctor">
+            <summary>
+            No arguments, no details. Only for giving information.
+            </summary>
+        </member>
+        <member name="M:LuddeToolset.Database.ReachedMaximumRowCountException.ToString">
+            <summary>
+            Returns "Reached maximum amount of rows."
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:LuddeToolset.Database.ROW_SUBITEMS_DELIMITER">
+            <summary>
+            Constant for splitting subitems of rows. Character ',' and 44 in ASCII.
+            </summary>
+        </member>
+        <member name="F:LuddeToolset.Database.IMAGE_FILE_INFO_LINECOUNT">
+            <summary>
+            Database image file has 6 lines to contain information about Database. Good to know.
+            </summary>
+        </member>
+        <member name="F:LuddeToolset.Database.MAXIMUM_ROW_COUNT">
+            <summary>
+            Maximum allowed row count.
+            </summary>
+        </member>
+        <member name="F:LuddeToolset.Database.MAXIMUM_COLUMN_COUNT">
+            <summary>
+            Maximum allowed column count.
+            </summary>
+        </member>
+        <member name="F:LuddeToolset.Database.MAXIMUM_SUBITEM_LENGTH">
+            <summary>
+            Maximum length of any subitem string.
+            </summary>
+        </member>
+        <member name="F:LuddeToolset.Database.VERSION">
+            <summary>
+            Version of this source code.
+            </summary>
+        </member>
+        <member name="T:LuddeToolset.ErrorHandler">
+            <summary>
+            Handle errors in a better way with ErrorHandler. Create one instance of this, do generic error handling or write your own handler.
+            </summary>
+        </member>
+        <member name="P:LuddeToolset.ErrorHandler.ErrorFileOutputDirectory">
+            <summary>
+            Directory to save error messages.
+            </summary>
+        </member>
+        <member name="P:LuddeToolset.ErrorHandler.SpecialMessage">
+            <summary>
+            Application-specific message to add to error messages.
+            </summary>
+        </member>
+        <member name="P:LuddeToolset.ErrorHandler.DoGenericErrorHandling">
+            <summary>
+            If true, uses generic error handling method to handle exceptions. If false developer needs to override LuddeToolset.ErrorHandler.Handle with their handler method.
+            </summary>
+        </member>
+        <member name="M:LuddeToolset.ErrorHandler.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            Class initialization.
+            </summary>
+            <param name="outputDirectory">Directory to save error messages</param>
+            <param name="message">Application-specific message to add to error messages</param>
+            <param name="doGenericErrorHandling">If true, uses generic error handling method to handle exceptions, if false developer needs to override LuddeToolset.ErrorHandler.Handle with their handler method</param>
+        </member>
+        <member name="M:LuddeToolset.ErrorHandler.Handle(System.Exception)">
+            <summary>
+            This method is for handling exceptions. If DoGenericErrorHandling is set to false, override this with your method to do another task.
+            </summary>
+            <param name="exception"></param>
+        </member>
+        <member name="T:LuddeToolset.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:LuddeToolset.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:LuddeToolset.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:LuddeToolset.SharedMethods">
+            <summary>
+            Library for common stuff.
+            </summary>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.WriteToScreen(System.String,System.Boolean,System.Windows.Forms.RichTextBox)">
+            <summary>
+            Appends text to outputStream.
+            </summary>
+            <param name="buffer">Text to append</param>
+            <param name="addNewLine">True for new line</param>
+            <param name="outputStream">RichTextBox</param>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.ClearScreen(System.Windows.Forms.RichTextBox)">
+            <summary>
+            Clears all text from outputStream.
+            </summary>
+            <param name="outputStream"></param>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.ReadLinesFromFile(System.String)">
+            <summary>
+            Opens and reads lines of a file, returns list object containing lines. Suppresses errors. Not safe.
+            </summary>
+            <param name="fromFilePath">Path of file</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.ReadLinesFromFile(System.String,LuddeToolset.ErrorHandler)">
+            <summary>
+            Opens and reads lines of a file, returns list object containing lines. Handles errors. Safe.
+            </summary>
+            <param name="fromFilePath">Path of file</param>
+            <param name="handler">Handler object to handle errors.</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.WriteLinesToFile(System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            Writes all elements in List object, treating them as lines. Suppresses errors. Not safe. 
+            </summary>
+            <param name="writeTheseLines">List containing lines</param>
+            <param name="toFilePath">Path of file to write</param>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.WriteLinesToFile(System.Collections.Generic.List{System.String},System.String,LuddeToolset.ErrorHandler)">
+            <summary>
+            Writes all elements in List object, treating them as lines. Handles errors. Safe. 
+            </summary>
+            <param name="writeTheseLines">List containing lines</param>
+            <param name="toFilePath">Path of file to write</param>
+            <param name="handler">Handler object</param>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.CreateAndWriteErrorMessage(System.String,System.Exception,System.String)">
+            <summary>
+            Creates a error log text out of an Exception object and saves it in the given directory. Safe.
+            </summary>
+            <param name="saveDirectory">Directory to save log. If does not exist, will be created.</param>
+            <param name="exception">Exception describing the error.</param>
+            <param name="applicationMessageLine">Special message for defining the application or the exception, supplied by developer. Default is empty.</param>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.LinesToString(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Appends Environment.NewLine after every element in given list, appends every element to a string, returns the string.
+            </summary>
+            <param name="list">List containing lines.</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.WriteBytesToFile(System.Byte[],System.String)">
+            <summary>
+            Writes supplied byte[] to supplied file. Supresses errors. Not safe.
+            </summary>
+            <param name="writeTheseBytes">Bytes to write</param>
+            <param name="toFilePath">File to write to</param>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.ReadBytesFromFile(System.String)">
+            <summary>
+            Reads from supplied file. Suppresses error. Not safe.
+            </summary>
+            <param name="fromFilePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.Valid(System.String)">
+            <summary>
+            Returns true if this string object is not null, whitespace or empty otherwise returns false.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.ContainsInvalidCharacters(System.String,System.Char)">
+            <summary>
+            Returns true if value contains invalidChar.
+            </summary>
+            <param name="value">This value</param>
+            <param name="invalidChar">Character to find</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.ContainsInvalidCharacters(System.String,System.String)">
+            <summary>
+            Returns true if value contains invalidChar.
+            </summary>
+            <param name="value">This value</param>
+            <param name="invalidChar">Character to find</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.ContainsInvalidCharacters(System.String,System.Char[])">
+            <summary>
+            Returns true if value contains any characters from invalidChars array.
+            </summary>
+            <param name="value">This value</param>
+            <param name="invalidChars">Characters to find</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.ContainsInvalidCharacters(System.String,System.String[])">
+            <summary>
+            Returns true if value contains any characters from invalidChars array.
+            </summary>
+            <param name="value">This value</param>
+            <param name="invalidChars">Characters to find</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.GetDateTimeNow">
+            <summary>
+            Returns a string containing DateTime information in dd-MMM-yyyyTHH-mm-ss.fff format.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.GetTempString(System.String)">
+            <summary>
+            Returns a string object in "tmp(random number between 100 -> 2147483647)" format that is suitable for using with I/O tools and file naming. 
+            </summary>
+            <param name="append"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.GetFirstNCharacters(System.String,System.UInt32)">
+            <summary>
+            Returns first N amount of characters in a string. If amount is not valid, returns string.
+            </summary>
+            <param name="string">string to return characters of</param>
+            <param name="amount">amount of characters</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.RemoveWrappers(System.Char,System.String)">
+            <summary>
+            Removes wrapping characters and returns what's left.
+            </summary>
+            <param name="wrapper">Character that is wrapping text</param>
+            <param name="toBeRemoved">String to remove wrappers of</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.RemoveAt(System.String,System.Int32)">
+            <summary>
+            Removes character of string at given index (lowest index = 0). 
+            </summary>
+            <param name="value">String to remove character of</param>
+            <param name="index">Index to remove</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.RemoveLastCharacter(System.String)">
+            <summary>
+            Removes last character of this string.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.RemoveLastAppearance(System.String,System.String)">
+            <summary>
+            Removes last appearance of any string from a string.
+            </summary>
+            <param name="removeThis">String to remove appearance of</param>
+            <param name="inHere">String to perform task on</param>
+            <returns>Returns string.Empty if strings are not valid or inHere does not contain a string to remove.</returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.Tokenize(System.String)">
+            <summary>
+            Tokenizes given text by space. Anything wrapped in character '"' will be counted as a word and not be splitted. 
+            </summary>
+            <param name="text">The input to tokenize</param>
+            <returns>Returns List object containing tokens.</returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.AppendAll(System.String[])">
+            <summary>
+            Appends every value contained in the array and returns the appended string.
+            </summary>
+            <param name="arr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.AppendAll(System.Char[])">
+            <summary>
+            Appends every value contained in the array and returns the appended string.
+            </summary>
+            <param name="arr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.AppendAll(System.String[],System.String)">
+            <summary>
+            Appends every value contained in the array with given delimiter and returns the appended string.
+            </summary>
+            <param name="arr"></param>
+            <param name="delimiter">Delimiter to put between elements</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.AppendAll(System.Char[],System.Char)">
+            <summary>
+            Appends every value contained in the array with given delimiter and returns the appended string.
+            </summary>
+            <param name="arr"></param>
+            <param name="delimiter">Delimiter to put between elements</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.WrapText(System.Char,System.String)">
+            <summary>
+            Wraps supplied text with supplied character. Returns wrapped text. 
+            </summary>
+            <param name="wrapper">Character to wrap the text</param>
+            <param name="text">Text to be wrapped</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.GetIndexOfElement``1(``0[],``0)">
+            <summary>
+            Returns index of element in referenced array.
+            </summary>
+            <typeparam name="T">The sky is the limit ;)</typeparam>
+            <param name="arr">Array to search in</param>
+            <param name="element">Element to search for</param>
+            <returns>Returns -1 if something is wrong.</returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.RemoveAt``1(``0[]@,System.Int32)">
+            <summary>
+            Remove anything from any index of referenced array.
+            </summary>
+            <typeparam name="T">The sky is the limit ;)</typeparam>
+            <param name="arr"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.CheckForMatch(System.String,System.String[])">
+            <summary>
+            Returns true if string "checkThis" is found in string array "inHere". 
+            </summary>
+            <param name="checkThis">String to look for</param>
+            <param name="inHere">Place to look at</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.SortAscending``1(``0[]@)">
+            <summary>
+            Sorts referenced array in ascending (a -> z) order.
+            </summary>
+            <typeparam name="T">Please use string, char, int, double and float.</typeparam>
+            <param name="array"></param>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.SortDescending``1(``0[]@)">
+            <summary>
+            Sorts referenced array in descending (z -> a) order.
+            </summary>
+            <typeparam name="T">Please use string, char, int, double and float.</typeparam>
+            <param name="array"></param>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.SortAscending``1(System.Collections.Generic.List{``0})">
+            <summary>
+            Sorts this list in ascending (a -> z) order.
+            </summary>
+            <typeparam name="T">Please use string, char, int, double and float.</typeparam>
+            <param name="list"></param>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.SortDescending``1(System.Collections.Generic.List{``0})">
+            <summary>
+            Sorts this list in descending (z -> a) order.
+            </summary>
+            <typeparam name="T">Please use string, char, int, double and float.</typeparam>
+            <param name="list"></param>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.IsFilled(System.Object[],System.Object)">
+            <summary>
+            Returns true if this array is filled with the given element.
+            </summary>
+            <param name="array">This array</param>
+            <param name="element">Element that is filling</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.IsFilled(System.Int32[],System.Int32)">
+            <summary>
+            Returns true if this array is filled with the supplied element integer.
+            </summary>
+            <param name="array">This integer array</param>
+            <param name="element">Integer used to fill the array</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.IsFilled(System.Boolean[],System.Boolean)">
+            <summary>
+            Returns true if this array is filled with given element.
+            </summary>
+            <param name="array">This bool array</param>
+            <param name="element">Element that is filling</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.Fill``1(``0[]@,``0)">
+            <summary>
+            Fills referenced array with supplied element.
+            </summary>
+            <param name="array">This referenced array to fill</param>
+            <param name="element">Element object to fill the array</param>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.ToInteger(System.Object,System.Boolean,LuddeToolset.ErrorHandler)">
+            <summary>
+            Converts object to integer safely. Suppressed errors can be collected by using a ErrorHandler object. 
+            </summary>
+            <param name="value">object to convert</param>
+            <param name="errCheck">default false to suppress errors, true to handle</param>
+            <param name="handler">handler object for errors</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.ToBoolean(System.Object,System.Boolean,LuddeToolset.ErrorHandler)">
+            <summary>
+            Converts object to boolean safely. Suppressed errors can be collected by using a ErrorHandler object. 
+            </summary>
+            <param name="value">object to convert</param>
+            <param name="errCheck">default false to suppress errors, true to handle</param>
+            <param name="handler">handler object for errors</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.ToDouble(System.Object,System.Boolean,LuddeToolset.ErrorHandler)">
+            <summary>
+            Converts object to double safely. Suppressed errors can be collected by using a ErrorHandler object. 
+            </summary>
+            <param name="value">object to convert</param>
+            <param name="errCheck">default false to suppress errors, true to handle</param>
+            <param name="handler">handler object for errors</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.ToFloat(System.Object,System.Boolean,LuddeToolset.ErrorHandler)">
+            <summary>
+            Converts object to float safely. Suppressed errors can be collected by using a ErrorHandler object. 
+            </summary>
+            <param name="value">object to convert</param>
+            <param name="errCheck">default false to suppress errors, true to handle</param>
+            <param name="handler">handler object for errors</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.ToIntegerArray``1(``0[])">
+            <summary>
+            Converts every value in template type array to integer type. If supplied array was empty or null, returns null.
+            </summary>
+            <param name="array"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.SharedMethods.ToStringArray``1(``0[])">
+            <summary>
+            Converts every value in template type array to string type. If supplied array was empty or null, returns null.
+            </summary>
+            <param name="array"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LuddeToolset.TypeRecognition">
+            <summary>
+            Generalized type recognition for variables contained in string. Uses Regular Expressions and several methods to find types.
+            </summary>
+            <summary>
+            Generalized type recognition for variables contained in string. Uses Regular Expressions and several methods to find types.
+            </summary>
+        </member>
+        <member name="M:LuddeToolset.TypeRecognition.IsBoolean(System.String)">
+            <summary>
+            Returns true if given string contains a boolean expression. ("true" or "false")
+            </summary>
+            <param name="value">The input to find type of</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.TypeRecognition.IsString(System.String)">
+            <summary>
+            Returns true if given string contains a string that IS NOT a boolean, an integer or a double expression.
+            </summary>
+            <param name="value">The input to find type of</param>
+            <returns></returns>
+        </member>
+        <member name="M:LuddeToolset.TypeRecognition.FindType(System.String)">
+            <summary>
+            Returns the 'Type' of given value.
+            </summary>
+            <param name="value">The value to find type of</param>
+            <returns>Any enum from LuddeToolset.TypeRecognition.Types</returns>
+        </member>
+        <member name="T:LuddeToolset.TypeRecognition.Types">
+            <summary>
+            Types. Used for TypeRecognition.
+            </summary>
+        </member>
+        <member name="F:LuddeToolset.TypeRecognition.Types.String">
+            <summary>
+            Any expression that is not a boolean, double or integer is a string.
+            </summary>
+        </member>
+        <member name="F:LuddeToolset.TypeRecognition.Types.Integer">
+            <summary>
+            Numbers but no dots.
+            </summary>
+        </member>
+        <member name="F:LuddeToolset.TypeRecognition.Types.Boolean">
+            <summary>
+            "true" or "True" or "tRue" or "trUe" or "truE" or "TRue"... or "FALSE" is a boolean expression.
+            </summary>
+        </member>
+        <member name="F:LuddeToolset.TypeRecognition.Types.Double">
+            <summary>
+            Numbers but always with a dot.
+            </summary>
+        </member>
+        <member name="F:LuddeToolset.TypeRecognition.Types.Unknown">
+            <summary>
+            What's that? An error or something incomputable.
+            </summary>
+        </member>
+    </members>
+</doc>
