@@ -3,7 +3,7 @@
  
  There isn't any reliable solution to control the cmd.exe in a Winforms application, so I made one for everyone!
  Base logic of the code is from ConsoleControlAPI, but I changed almost everything. Bugs with the inputting is now fixed.
- Also check out the ConsoleControlAPI: [https://github.com/dwmkerr/consolecontrol/]
+ Also check out the [ConsoleControlAPI](https://github.com/dwmkerr/consolecontrol/)
  
  * Target .NET Framework version is 4.6
  
