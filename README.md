@@ -5,23 +5,9 @@
  Base logic of the code is from ConsoleControlAPI, but I changed almost everything. Bugs with the inputting is now fixed.
  Also check out the ConsoleControlAPI: [https://github.com/dwmkerr/consolecontrol/]
  
- * Targeted .NET Framework version is 4.6
- 
- ## Project Notes
- 
- version 1
- [x] Commented everything.
- [x] Handles 'title' command.
- [x] Handles 'color' command.
- [x] Handles 'cls' command.
- [x] All bugs that ConsoleControlAPI and AltConsole had is not included :)
- 
- version 1.1
- [ ] Support for use in WPF projects.
+ * Target .NET Framework version is 4.6
  
  ## Contact me
 
 * [**Twitter**](https://www.twitter.com/fybalaban/ "My Twitter profile")
-* [**Instagram**](https://www.instagram.com/ferityigitbalaban/ "My Instagram profile")
-* [**Website**](https://fybalaban.github.io/website/ "My personal website")
 * [**Email address**](mailto:ferityigitbalaban@gmail.com?subject=[GitHub]%20WindowsCommandPrompt "Email me!")
