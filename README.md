@@ -9,5 +9,5 @@
  
  ## Contact me
 
-* [**Twitter**](https://www.twitter.com/fybalaban/ "My Twitter profile")
+* [**Twitter**](https://www.twitter.com/feritdegil/ "My Twitter profile")
 * [**Email address**](mailto:ferityigitbalaban@gmail.com?subject=[GitHub]%20WindowsCommandPrompt "Email me!")
